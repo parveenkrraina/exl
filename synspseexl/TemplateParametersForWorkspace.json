@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synspseexl"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"synapse12az40d-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse12az40d.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"synspseexl-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synspseexl.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://github.com/parveenkrraina/Azure-DE-Project-Case-Study/tree/main/sales_data/onlinetransaction"
+		},
+		"synapse12az40d-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalake12az40d.dfs.core.windows.net"
+		},
+		"synspseexl-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adlsgen2exl.dfs.core.windows.net"
+		}
+	}
+}
